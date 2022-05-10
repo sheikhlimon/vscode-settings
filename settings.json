@@ -14,7 +14,6 @@
     "<C-e>": true,
     "<C-f>": true,
     "<C-b>": true, 
-    "<C-r>": true
   },
   "vim.normalModeKeyBindings": [
     {
