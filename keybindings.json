@@ -1,0 +1,51 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Move to the previous/next editor.
+  {
+    "key": "shift+k",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+j",
+    "command": "workbench.action.previousEditor"
+  },
+  //Ensure that tab button works in vim.
+  //   {
+  //     "key": "tab",
+  //     "command": "tab",
+  //     "when": "editorTextFocus && !editorTabMovesFocus"
+  //   },
+  //   {
+  //     "key": "shift+tab",
+  //     "command": "outdent",
+  //     "when": "editorTextFocus && !editorTabMovesFocus"
+  // },
+  // VSCode terminal commands.
+  {
+    "key": "ctrl+enter",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  //intellisense traverse with vim ctrl j ctrl k
+  {
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  }
+]

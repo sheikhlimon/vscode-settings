@@ -1,0 +1,113 @@
+{
+  //vim keybindings
+  "vim.useSystemClipboard": true,
+  "vim.timeout": 200,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
+    }
+  ],
+  "vim.useCtrlKeys": false,
+  "vim.handleKeys": {
+    "<C-y>": true,
+    "<C-e>": true,
+    "<C-f>": true,
+    "<C-b>": true, 
+    "<C-r>": true
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["v", "n"],
+      "after": ["v", "g", "_", "y"]
+    },
+    {
+      "before": ["d", "n"],
+      "after": ["d", "g", "_"]
+    }
+  ],
+
+  //vim mode viwy viewcmd+d p issue hack
+  "vim.commandLineModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "after": ["editor.action.clipboardPasteAction"]
+    }
+  ],
+  // Use vim hjkl to navigate folders.
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.list.automaticKeyboardNavigation": false,
+
+  //editor
+  "workbench.startupEditor": "none",
+  "editor.renderWhitespace": "none",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Hack NF",
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "all",
+  "explorer.compactFolders": false,
+  "breadcrumbs.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "files.autoSave": "afterDelay",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "terminal.integrated.fontFamily": "Hack NF",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "liveServer.settings.CustomBrowser": "firefox",
+  "window.zoomLevel": 0.25,
+  "editor.mouseWheelZoom": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "args": ["-noLogo"]
+    }
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#b2b2b2",
+    "terminalCursor.foreground": "#b2b2b2"
+  },
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o a && .\\a",
+    "code-runner.clearPreviousOutput": true
+  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  //theme
+  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "code-runner.runInTerminal": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "git.autofetch": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": true
+  },
+  "editor.accessibilitySupport": "off"
+}
