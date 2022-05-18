@@ -2,11 +2,11 @@
 [
   // Move to the previous/next editor.
   {
-    "key": "shift+k",
+    "key": "ctrl+k",
     "command": "workbench.action.nextEditor"
   },
   {
-    "key": "shift+j",
+    "key": "ctrl+j",
     "command": "workbench.action.previousEditor"
   },
   //Ensure that tab button works in vim.
@@ -41,7 +41,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "shift+b",
+    "key": "shift+alt+e",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
