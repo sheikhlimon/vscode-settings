@@ -75,8 +75,11 @@
   "window.zoomLevel": 0.25,
   "editor.mouseWheelZoom": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  // "C_Cpp.autocomplete": "Disabled",
+  "editor.parameterHints.enabled": false,
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
+    // "editor.quickSuggestions": false,
   },
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -101,7 +104,7 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  //them
+  //theme
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
   "workbench.colorTheme": "Gruvbox Dark Hard"
