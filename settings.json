@@ -81,7 +81,7 @@
     }
   },
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#32aff8",
+    "editorCursor.foreground": "#e4e4e4",
     "terminalCursor.foreground": "#32afff"
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
