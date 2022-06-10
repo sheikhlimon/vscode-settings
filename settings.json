@@ -16,16 +16,6 @@
     "<C-b>": true,
     "<C-r>": true
   },
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["v", "n"],
-      "after": ["v", "g", "_", "y"]
-    },
-    {
-      "before": ["d", "n"],
-      "after": ["d", "g", "_"]
-    }
-  ],
 
   //vim mode viwy viewcmd+d p issue hack
   "vim.commandLineModeKeyBindingsNonRecursive": [
@@ -34,15 +24,17 @@
       "after": ["editor.action.clipboardPasteAction"]
     }
   ],
+  
   // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
 
   //editor
   "workbench.startupEditor": "none",
+  "window.zoomLevel": 0.05,
   "editor.renderWhitespace": "none",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.fontFamily": "Hack NF",
   "editor.fontLigatures": true,
   "editor.renderLineHighlight": "all",
@@ -68,19 +60,19 @@
     "source.organizeImports": true
   },
   "eslint.alwaysShowStatus": true,
-  "terminal.integrated.fontFamily": "Hack NF",
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
-  "window.zoomLevel": 0.25,
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.enableMultiLinePasteWarning": false,
+
+  //c/c++ intellisence and hints after opening bracket
   "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
     // "editor.quickSuggestions": false,
   },
+
+  //powershell && terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -95,17 +87,21 @@
   "code-runner.executorMap": {
     "c": "cd $dir && gcc $fileName -o a && .\\a"
   },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.fontFamily": "Hack NF",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.cursorWidth": 2,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "code-runner.runInTerminal": true,
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
