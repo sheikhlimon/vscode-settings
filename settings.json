@@ -38,7 +38,6 @@
   "editor.fontLigatures": true,
   "editor.renderLineHighlight": "all",
   "explorer.compactFolders": false,
-  "breadcrumbs.enabled": false,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "files.autoSave": "afterDelay",

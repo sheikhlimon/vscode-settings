@@ -31,7 +31,7 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
 
-  //intellisense traverse with vim ctrl j ctrl k
+  //intellisence traverse with vim ctrl j ctrl k
   {
     "key": "ctrl+j",
     "command": "selectNextSuggestion",
@@ -47,5 +47,5 @@
   {
     "key": "shift+alt+e",
     "command": "workbench.action.toggleSidebarVisibility"
-  },
+  }
 ]
