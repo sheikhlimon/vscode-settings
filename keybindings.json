@@ -20,6 +20,7 @@
   //     "command": "outdent",
   //     "when": "editorTextFocus && !editorTabMovesFocus"
   // },
+
   // VSCode terminal commands.
   {
     "key": "ctrl+enter",
@@ -29,6 +30,7 @@
     "key": "ctrl+shift+enter",
     "command": "workbench.action.toggleMaximizedPanel"
   },
+
   //intellisense traverse with vim ctrl j ctrl k
   {
     "key": "ctrl+j",
@@ -40,12 +42,10 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
+
+  //toggle sidebar
   {
     "key": "shift+alt+e",
     "command": "workbench.action.toggleSidebarVisibility"
   },
-  {
-    "key": "ctrl+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
-  }
 ]

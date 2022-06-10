@@ -101,5 +101,6 @@
 
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Darcula"
 }
