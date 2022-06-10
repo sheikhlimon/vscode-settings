@@ -24,7 +24,7 @@
       "after": ["editor.action.clipboardPasteAction"]
     }
   ],
-  
+
   // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
@@ -81,11 +81,8 @@
     }
   },
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#b2b2b2",
-    "terminalCursor.foreground": "#b2b2b2"
-  },
-  "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o a && .\\a"
+    "editorCursor.foreground": "#32aff8",
+    "terminalCursor.foreground": "#32afff"
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "Hack NF",
@@ -96,6 +93,9 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o a && .\\a"
+  },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -103,5 +103,5 @@
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "One Dark Pro Darker"
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
