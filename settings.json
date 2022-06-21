@@ -13,46 +13,78 @@
     "<C-r>": true,
     "<C-h>": true
   },
-
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<esc>"
+      ]
     }
   ],
-
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       //search items refreshed
-      "before": ["<leader>", "f"],
-      "commands": [":nohl"]
+      "before": [
+        "<leader>",
+        "f"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
       // Save file
-      "before": ["leader", "s"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        "leader",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     },
     {
       // Lookup a file in the project
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.quickOpen"]
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
     },
     {
       //move a line down
-      "before": ["K"],
-      "commands": ["lineBreakInsert"],
+      "before": [
+        "K"
+      ],
+      "commands": [
+        "lineBreakInsert"
+      ],
       "silent": true
     },
     {
       // Move lines down by 3 instead of 1
-      "before": ["<C-e>"],
-      "after": ["3", "<C-e>"]
+      "before": [
+        "<C-e>"
+      ],
+      "after": [
+        "3",
+        "<C-e>"
+      ]
     },
     {
       // Move lines up by 3 instead of 1
-      "before": ["<C-y>"],
-      "after": ["3", "<C-y>"]
-    },
+      "before": [
+        "<C-y>"
+      ],
+      "after": [
+        "3",
+        "<C-y>"
+      ]
+    }
   ],
 
   // Use vim hjkl to navigate folders.
@@ -60,6 +92,7 @@
   "workbench.list.automaticKeyboardNavigation": false,
 
   //editor
+  "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
   "editor.fontSize": 17,
@@ -91,7 +124,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
-
   //c/c++ intellisence and hints after opening bracket
   "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
@@ -99,13 +131,14 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
     // "editor.quickSuggestions": false,
   },
-
   //powershell && terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell",
-      "args": ["-noLogo"]
+      "args": [
+        "-noLogo"
+      ]
     }
   },
   "workbench.colorCustomizations": {
@@ -127,9 +160,11 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Darcula"
+  "workbench.colorTheme": "Darcula",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
