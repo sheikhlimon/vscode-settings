@@ -10,7 +10,7 @@
     "<C-e>": true,
     "<C-f>": true,
     "<C-b>": true,
-    "<C-r>": true
+    "<C-r>": true,
   },
 
   "vim.insertModeKeyBindings": [
@@ -53,7 +53,7 @@
       "silent": true
     }
   ],
-  
+
   // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
@@ -69,6 +69,7 @@
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "files.autoSave": "afterDelay",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,

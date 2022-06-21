@@ -47,5 +47,15 @@
   {
     "key": "shift+alt+e",
     "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "addCursorsAtSearchResults",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-addCursorsAtSearchResults",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
   }
 ]
