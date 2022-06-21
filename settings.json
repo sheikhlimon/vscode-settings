@@ -107,7 +107,6 @@
   "explorer.compactFolders": false,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
-  "files.autoSave": "afterDelay",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
