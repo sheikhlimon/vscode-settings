@@ -138,7 +138,14 @@
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  },
+  
+
+
+  //theme
+  "workbench.iconTheme": "vs-nomo-dark",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.colorTheme": "Darcula",
   
   
   //c/c++ intellisence and hints after opening bracket
@@ -160,6 +167,7 @@
     "editorCursor.foreground": "#e4e4e4",
     "terminalCursor.foreground": "#32afff"
   },
+
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "Hack NF",
   "terminal.integrated.cursorStyle": "line",
@@ -168,14 +176,11 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
+
+
+  //code runner
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "c": "cd $dir && gcc $fileName -o a && .\\a"
-  },
-
-  
-  //theme
-  "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.tree.renderIndentGuides": "none",
-  "workbench.colorTheme": "Darcula"
+  }
 }
