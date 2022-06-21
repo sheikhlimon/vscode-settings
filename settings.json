@@ -5,7 +5,6 @@
   "vim.useCtrlKeys": false,
   "vim.useSystemClipboard": true,
   "vim.leader": "<space>",
-  
   "vim.handleKeys": {
     "<C-y>": true,
     "<C-e>": true,
@@ -14,7 +13,6 @@
     "<C-r>": true,
     "<C-h>": true
   },
-  
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -26,7 +24,6 @@
       ]
     }
   ],
-  
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       //search items refreshed
@@ -74,7 +71,7 @@
         "<C-e>"
       ],
       "after": [
-        "3",
+        "2",
         "<C-e>"
       ]
     },
@@ -84,19 +81,16 @@
         "<C-y>"
       ],
       "after": [
-        "3",
+        "2",
         "<C-y>"
       ]
     }
   ],
-  
-
   // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
-
-  
   //editor
+  "files.autoSave": "afterDelay",
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
@@ -118,8 +112,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
-  
-  
   //format on save and formatter
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -138,20 +130,13 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  
-
-
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
   "workbench.colorTheme": "Darcula",
-  
-  
   //c/c++ intellisence and hints after opening bracket
   "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
-  
-  
   //powershell && terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -166,7 +151,7 @@
     "editorCursor.foreground": "#e4e4e4",
     "terminalCursor.foreground": "#32afff"
   },
-
+  //terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "Hack NF",
   "terminal.integrated.cursorStyle": "line",
@@ -175,8 +160,6 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
-
-
   //code runner
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
