@@ -11,6 +11,7 @@
     "<C-f>": true,
     "<C-b>": true,
     "<C-r>": true,
+    "<C-h>": true
   },
 
   "vim.insertModeKeyBindings": [
@@ -27,16 +28,6 @@
       "commands": [":nohl"]
     },
     {
-      // Move lines down by 3 instead of 1
-      "before": ["<C-e>"],
-      "after": ["3", "<C-e>"]
-    },
-    {
-      // Move lines up by 3 instead of 1
-      "before": ["<C-y>"],
-      "after": ["3", "<C-y>"]
-    },
-    {
       // Save file
       "before": ["leader", "s"],
       "commands": ["workbench.action.files.save"]
@@ -51,7 +42,17 @@
       "before": ["K"],
       "commands": ["lineBreakInsert"],
       "silent": true
-    }
+    },
+    {
+      // Move lines down by 3 instead of 1
+      "before": ["<C-e>"],
+      "after": ["3", "<C-e>"]
+    },
+    {
+      // Move lines up by 3 instead of 1
+      "before": ["<C-y>"],
+      "after": ["3", "<C-y>"]
+    },
   ],
 
   // Use vim hjkl to navigate folders.
