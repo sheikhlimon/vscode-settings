@@ -1,13 +1,9 @@
 {
   //vim keybindings
   "vim.useSystemClipboard": true,
-  "vim.timeout": 300,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<esc>"]
-    }
-  ],
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.easymotion": true,
   "vim.useCtrlKeys": false,
   "vim.handleKeys": {
     "<C-y>": true,
@@ -17,14 +13,47 @@
     "<C-r>": true
   },
 
-  //vim mode viwy viewcmd+d p issue hack
-  "vim.commandLineModeKeyBindingsNonRecursive": [
+  "vim.insertModeKeyBindings": [
     {
-      "before": ["p"],
-      "after": ["editor.action.clipboardPasteAction"]
+      "before": ["j", "j"],
+      "after": ["<esc>"]
     }
   ],
 
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      //search items refreshed
+      "before": ["<leader>", "f"],
+      "commands": [":nohl"]
+    },
+    {
+      // Move lines down by 3 instead of 1
+      "before": ["<C-e>"],
+      "after": ["3", "<C-e>"]
+    },
+    {
+      // Move lines up by 3 instead of 1
+      "before": ["<C-y>"],
+      "after": ["3", "<C-y>"]
+    },
+    {
+      // Save file
+      "before": ["leader", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      // Lookup a file in the project
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      //move a line down
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  
   // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
@@ -32,7 +61,6 @@
   //editor
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.fontSize": 17,
   "editor.fontFamily": "Hack NF",
   "editor.fontLigatures": true,
