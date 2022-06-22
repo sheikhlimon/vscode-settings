@@ -89,7 +89,7 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
   //editor
-  "files.autoSave": "afterDelay",
+  "files.autoSave": "off",
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
@@ -137,6 +137,7 @@
   "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
   //powershell && terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -150,12 +151,8 @@
     "editorCursor.foreground": "#e4e4e4",
     "terminalCursor.foreground": "#32afff"
   },
-  //terminal
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "Hack NF",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorWidth": 2,
-  "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
@@ -163,5 +160,5 @@
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "c": "cd $dir && gcc $fileName -o a && .\\a"
-  }
+  },
 }
