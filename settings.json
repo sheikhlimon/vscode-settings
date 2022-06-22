@@ -10,8 +10,7 @@
     "<C-e>": true,
     "<C-f>": true,
     "<C-b>": true,
-    "<C-r>": true,
-    "<C-h>": true
+    "<C-r>": true
   },
   "vim.insertModeKeyBindings": [
     {
@@ -66,7 +65,7 @@
       "silent": true
     },
     {
-      // Move lines down by 3 instead of 1
+      // Move lines down by 2 instead of 1
       "before": [
         "<C-e>"
       ],
@@ -76,7 +75,7 @@
       ]
     },
     {
-      // Move lines up by 3 instead of 1
+      // Move lines up by 2 instead of 1
       "before": [
         "<C-y>"
       ],
