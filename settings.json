@@ -111,6 +111,11 @@
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
+  //code runner
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o a && .\\a"
+  },
   //format on save and formatter
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -156,9 +161,7 @@
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
-  //code runner
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o a && .\\a"
-  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.enablePersistentSessions": false
 }
