@@ -89,7 +89,7 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
   //editor
-  "files.autoSave": "off",
+  "files.autoSave": "afterDelay",
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
@@ -114,7 +114,7 @@
   //code runner
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o a && .\\a"
+    "c": "gcc $fileName -o a && .\\a"
   },
   //format on save and formatter
   "editor.formatOnSave": true,
