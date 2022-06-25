@@ -114,7 +114,7 @@
   //code runner
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
-    "c": "clear; cd $dir && gcc $fileName -o a && .\\a"
+    "c": "clear; gcc $fileName -o a && .\\a"
   },
   //format on save and formatter
   "editor.formatOnSave": true,
@@ -141,8 +141,6 @@
   //c/c++ intellisence and hints after opening bracket
   "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
-  //powershell && terminal
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
