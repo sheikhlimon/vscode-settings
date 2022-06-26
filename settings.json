@@ -10,7 +10,8 @@
     "<C-e>": true,
     "<C-f>": true,
     "<C-b>": true,
-    "<C-r>": true
+    "<C-r>": true,
+    "<C-v>": true
   },
   "vim.insertModeKeyBindings": [
     {
