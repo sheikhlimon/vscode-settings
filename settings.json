@@ -94,7 +94,7 @@
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
   "editor.renderWhitespace": "none",
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.fontFamily": "Hack NF",
   "editor.fontLigatures": true,
   "editor.renderLineHighlight": "all",
@@ -162,5 +162,6 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.enablePersistentSessions": false
+  "terminal.integrated.enablePersistentSessions": false,
+  "window.zoomLevel": 0.1,
 }
