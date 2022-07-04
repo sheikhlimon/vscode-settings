@@ -90,6 +90,7 @@
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
   //editor
+  "window.zoomLevel": 0.1,
   "files.autoSave": "afterDelay",
   "editor.lineNumbers": "relative",
   "workbench.startupEditor": "none",
