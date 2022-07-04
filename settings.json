@@ -113,11 +113,11 @@
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
   //code runner
-  // "code-runner.runInTerminal": true,
-  // "code-runner.executorMap": {
-  //   "c": "cd $dir && gcc $fileName -o a && .\\a",
-  //   "cpp": "cd $dir && g++ $fileName -std=c++17 -Wall -o a && .\\a"
-  // },
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o a && .\\a",
+    "cpp": "g++ $fileName -std=c++17 -Wall -o a && .\\a"
+  },
   //format on save and formatter
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -140,7 +140,7 @@
   "workbench.iconTheme": "vs-nomo-dark",
   "workbench.tree.renderIndentGuides": "none",
   //c/c++ intellisence and hints after opening bracket
-  "C_Cpp.autocomplete": "Disabled",
+  // "C_Cpp.autocomplete": "Disabled",
   "editor.parameterHints.enabled": false,
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
@@ -163,5 +163,4 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.enablePersistentSessions": false,
-  "window.zoomLevel": 0.1,
 }
