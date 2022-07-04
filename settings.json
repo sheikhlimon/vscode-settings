@@ -113,12 +113,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "liveServer.settings.CustomBrowser": "firefox",
-  //code runner
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "c": "cd $dir && gcc $fileName -o a && .\\a",
-    "cpp": "g++ $fileName -std=c++17 -Wall -o a && .\\a"
-  },
   //format on save and formatter
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -139,10 +133,20 @@
   },
   //theme
   "workbench.iconTheme": "vs-nomo-dark",
-  "workbench.tree.renderIndentGuides": "none",
-  //c/c++ intellisence and hints after opening bracket
-  // "C_Cpp.autocomplete": "Disabled",
-  "editor.parameterHints.enabled": false,
+  //cursor
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#FFDEAD",
+    "terminalCursor.foreground": "#FFDEAD"
+  },
+  //c/c++ intellisence
+  "C_Cpp.autocomplete": "Disabled",
+  //code runner
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "c": "cd $dir && gcc $fileName -o a && .\\a",
+    "cpp": "g++ $fileName -std=c++17 -Wall -o a && .\\a"
+  },
+  //terminal
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -151,10 +155,6 @@
         "-noLogo"
       ]
     }
-  },
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#FFDEAD",
-    "terminalCursor.foreground": "#FFDEAD"
   },
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.fontFamily": "Hack NF",
